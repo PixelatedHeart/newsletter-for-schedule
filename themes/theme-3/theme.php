@@ -7,12 +7,13 @@
 
 
 
-$menu_items = wp_get_nav_menu_items('Canal Sur');
-if ($menu_items == '') $menu_items = wp_get_nav_menu_items('Canal sur');
-if ($menu_items == '') $menu_items = wp_get_nav_menu_items('canal sur');
-if ($menu_items == '') $menu_items = wp_get_nav_menu_items('CanalSur');
-if ($menu_items == '') $menu_items = wp_get_nav_menu_items('canalsur');
-if ($menu_items == '') $menu_items = wp_get_nav_menu_items('Canalsur');
+$menu_items = wp_get_nav_menu_items('Sala de Prensa');
+if ($menu_items == '') $menu_items = wp_get_nav_menu_items('Sala de prensa');
+if ($menu_items == '') $menu_items = wp_get_nav_menu_items('sala de prensa');
+if ($menu_items == '') $menu_items = wp_get_nav_menu_items('Sala De Prensa');
+if ($menu_items == '') $menu_items = wp_get_nav_menu_items('SaladePrensa');
+if ($menu_items == '') $menu_items = wp_get_nav_menu_items('Saladeprensa');
+if ($menu_items == '') $menu_items = wp_get_nav_menu_items('saladeprensa');
 $ids = '';
 foreach (  $menu_items as  $menu_item ) {
 	$ids[] = $menu_item->object_id;	
