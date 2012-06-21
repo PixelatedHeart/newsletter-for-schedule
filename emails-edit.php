@@ -96,10 +96,10 @@ for ($i = 1; $i <= 40; $i++) {
 
 // Themes
 $themes[''] = 'Plantillas de newsletter';
-$themes['blank'] = 'Newsletter vacía';
+$themes['blank'] = 'Vacía';
 //$themes['theme-1'] = 'Newsletter theme 1';
-$themes['theme-2'] = 'Newsletter Programación';
-$themes['theme-3'] = 'Newsletter Canal Sur';
+$themes['theme-2'] = 'Programación';
+$themes['theme-3'] = 'Sala de Prensa';
 
 $nc->errors($errors);
 $nc->messages($messages);
