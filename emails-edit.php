@@ -226,7 +226,7 @@ function newsletter_get_theme_css_url($theme) {
 						</select>
                     
                         <div class="hints">
-                        Puedes programar una fecha y pinchar en "Programar". Tu newsletter se programará para enviarse en el momento señalado.
+                        Puedes programar una fecha y pinchar en "Programar". Tu boletín se programará para enviarse en el momento señalado.
                     </div>
                 </td>
             </tr>
@@ -255,8 +255,8 @@ function newsletter_get_theme_css_url($theme) {
         </table>
 
         <p class="submit">
-            <?php if ($nc->data['status'] != 'sending') $nc->button('save', 'Programar'); ?>
-            <?php if ($nc->data['status'] != 'sending') $nc->button_confirm('test', 'Salvar y probar', 'Salva la newsletter y se envía a los usuarios de prueba'); ?>
+            <?php if ($nc->data['status'] != 'sending') $nc->button('save', 'Programar', 'El envío se programará para su envío el día ' .  . ' a la hora ' . . ''); ?>
+            <?php if ($nc->data['status'] != 'sending') $nc->button_confirm('test', 'Salvar y probar', 'Si continúa el boletín se guardará y se enviará a los usuarios de prueba'); ?>
 
             <?php if ($nc->data['status'] == 'new') {
                 $nc->button_confirm('send', 'Enviar', 'Enviar la newsletter');
