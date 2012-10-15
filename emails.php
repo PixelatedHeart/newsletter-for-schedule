@@ -21,8 +21,8 @@ if ($nc->is_action('send')) {
 <p><a href="admin.php?page=newsletter/emails-edit.php&amp;id=0" class="button">Crear nueva newsletter</a></p>
 <p>
     El sistema activará el siguiente envío en: <?php echo wp_next_scheduled('newsletter')-time(); ?> segundos
-    <?php $nc->button('send', 'Enviar ahora'); ?> <br />Pulsar en "enviar ahora" pone en cola el envío en servidor AHORA y no cuando especifica el contador. El envío puede no ser inmediato. <br />
-    Un envío no comenzará hasta que el anterior haya terminado.
+    <!--<?php $nc->button('send', 'Enviar ahora'); ?> <br />Pulsar en "enviar ahora" pone en cola el envío en servidor AHORA y no cuando especifica el contador.--><br /> El envío puede no ser inmediato. <br />
+    Un envío no comenzará hasta que el anterior haya terminado. Puedes revisar la cantidad de correos que se envían por hora en la <strong>Configuración General</strong>.
 </p>
 
     <table class="widefat">
